@@ -1,0 +1,29 @@
+{% extends 'formdiagnosis/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="top_display">
+        <h1 align = 'center'>คุณมีโอกาสที่จะเป็นโรค ท้องอืด ท้องเฟ้อ</h1>
+        <h3 align = 'center' class="ml-5">{{percent}}%</h3>
+    </div>
+    <div class="des-layout">
+        <div class="description" style="outline-color: #EEAE20;">
+            <h2>การปฏิบัติตนเบื้องต้น</h2>
+            <p align = 'left'>- ไม่ควรรับประทานอารย่อยยากจำนวนมาก</p>
+            <p align = 'left'>- ใช้ยาบรรเทาอาการ และให้เปลี่ยนพฤติกรรมที่เสี่ยงต่ออาการท้องอืด เช่น ลดปริมาณอากาศที่กลืนเข้าร่างกาย จำกัดปริมาณการดื่มเครื่องดื่มอัดแก๊ส และมีน้ำตาลสูง</p>
+            <p align = 'left'>- หลังรับประทานอาหารไม่ควรนอนทันที ควรเว้นระยะประมาณ15-30นาที</p>
+        </div>
+        <div class="description ml-5" style="outline-color: greenyellow;">
+            <h2>ข้อเสนอแนะ</h2>
+            <p align = 'left'>- หากอาการหนักจนไม่สามารถดูแลรักษาตนเองได้ และยาสามัญประจำบ้านไม่สามารถบรรเทาอาการ ควรไปพบแพทย์ผู้เชี่ยวชาญเพื่อวินิจฉัยเพิ่มเติมและหาแนวทางการรักษา</p>
+            <h2>ยาที่แนะนำ</h2>
+            <p align = 'left'>- ผู้ใหญ่ : รับประทานครั้งละ 1-2 ช้อนโต๊ะ</p>
+            <p align = 'left'>- เด็กอายุ 6-12 ปี : รับประทานครั้งละ ½ ช้อนโต๊ะ</p>
+            <p> <font color= "red"> * ก่อนการใช้งาน โปรดอ่านฉลากบนผลิตภัณฑ์อย่างละเอียดอีกครั้ง * </p> </font>
+        </div>
+    </div>
+    <div class="return-button">
+        <a href="{% url 'home-page' %}"><button type="button" class="btn btn-primary mr-1">กลับไปหน้าแรก</button></a>
+    </div>
+</div>
+{% endblock %}

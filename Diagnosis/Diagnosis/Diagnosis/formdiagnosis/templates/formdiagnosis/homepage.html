@@ -1,0 +1,25 @@
+{% extends 'formdiagnosis/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="suffix-box mt-5">
+        <h1 class="suffix-word-text">โปรแกรมวินิจฉัยโรค<h1>
+        <h2 class="suffix-word-text text-bottom">โปรเลือกโรคที่ท่านต้องการวินิจฉัย</h2>
+    </div>
+    <div class="disease-box mt-5">
+        <a href="{% url 'colddig-page' 1 1  %}"><button type="button" class="btn btn-primary mr-1">ไข้หวัด</button></a>
+        <a href="{% url 'allergy-page' 1 1%}"><button type="button" class="btn btn-primary ml-1">วิงเวียนศีรษะ</button></a>
+        <a href="{% url 'muscle-page' 1 1%}"><button type="button" class="btn btn-primary ml-1">ปวดกล้ามเนื้อ</button></a>
+        <a href="{% url 'flatulence-page' 1 1%}"><button type="button" class="btn btn-primary ml-1">ท้องอืด ท้องเฟ้อ</button></a>
+        <a href="{% url 'diarrhea-page' 1 1%}"><button type="button" class="btn btn-primary ml-1">ท้องเสีย</button></a>
+        <a href="{% url 'constipation-page' 1 1  %}"><button type="button" class="btn btn-primary mr-1">ท้องผูก</button></a>
+        <a href="{% url 'allergiccontact-page' 1 1%}"><button type="button" class="btn btn-primary ml-1">ผื่นแพ้จากการสัมผัส</button></a>
+        <a href="{% url 'urticaria-page' 1 1%}"><button type="button" class="btn btn-primary ml-1">ลมพิษ</button></a>
+        <a href="{% url 'allergicweather-page' 1 1%}"><button type="button" class="btn btn-primary ml-1">แพ้อากาศ</button></a>
+        <a href="{% url 'coldallergy-page' 1 1%}"><button type="button" class="btn btn-primary ml-1">หวัดภูมิแพ้</button></a>
+        <a href="{% url 'accident-page' 1 1%}"><button type="button" class="btn btn-primary ml-1">อุบัติเหตุ</button></a>
+        <a href="{% url 'parasite-page' 1 1%}"><button type="button" class="btn btn-primary ml-1">พยาธิ</button></a>
+        <a href="{% url 'cough-page' 1 1%}"><button type="button" class="btn btn-primary ml-1">ไอ</button></a>
+    </div>
+</div>
+{% endblock %}

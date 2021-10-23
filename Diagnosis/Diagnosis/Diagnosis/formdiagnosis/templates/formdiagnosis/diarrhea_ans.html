@@ -1,0 +1,30 @@
+{% extends 'formdiagnosis/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="top_display">
+        <h1 align = 'center'>โอกาสที่คุณจะ ท้องเสีย</h1>
+        <h3 align = 'center' class="ml-5">{{percent}}%</h3>
+    </div>
+    <div class="des-layout">
+        <div class="description" style="outline-color: #EEAE20;">
+            <h2>การปฏิบัติตนเบื้องต้น</h2>
+            <p align = 'left'>- งดอาหารในขณะที่ท้องเสีย</p>
+            <p align = 'left'>- พยายามจิบน้ำอย่างสม่ำเสมอ</p>
+            <p align = 'left'>- ดื่มน้ำเกลือแร่</p>
+        </div>
+        <div class="description ml-5" style="outline-color: greenyellow;">
+            <h2>ข้อเสนอแนะ</h2>
+            <p align = 'left'>- อุจจาระมีมูกเลือดปน มีกลิ่นเหม็นผิดปกติ(คล้ายกุ้งเน่า) คลื่นไส้ อาเจียนรุนแรง มีไข้สูงเกินกว่า 38.5 องศาเซลเซียส ท้องเสียนานกว่า 48 ชั่วโมง และท้องเสียเรื้อรังร่วมกับเบื่ออาหาร ควรไปพบแพทย์ผู้เชี่ยวชาญเพื่อวินิจฉัยเพิ่มเติมและหาแนวทางการรักษา</p>
+            <h2>ยาที่แนะนำ</h2>
+            <p align = 'left'>- ผงถ่านรักษาอาการท้องเสีย</p>
+            <p align = 'left'>- รับประทานตอนท้องว่าง โดยรับประทานก่อนอาหารอย่างน้อย 1 ชั่วโมงหรือหลังอาหารอย่างน้อย 2 ชั่วโมง</p>
+            <p align = 'left'>- รับประทานยาตามขนาด และความถี่ที่ระบุไว้บนฉลาก (เนื่องจากยาแต่ละชื่อการค้าอาจมีปริมาณตัวยาที่แตกต่าง))</p>
+            <p> <font color= "red"> * ก่อนการใช้งาน โปรดอ่านฉลากบนผลิตภัณฑ์อย่างละเอียดอีกครั้ง * </p> </font>
+        </div>
+    </div>
+    <div class="return-button">
+        <a href="{% url 'home-page' %}"><button type="button" class="btn btn-primary mr-1">กลับไปหน้าแรก</button></a>
+    </div>
+</div>
+{% endblock %}

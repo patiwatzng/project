@@ -1,0 +1,32 @@
+{% extends 'formdiagnosis/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container" xmlns="http://www.w3.org/1999/html">
+    <div class="top_display">
+        <h1 align = 'center'>คุณมีโอกาสที่จะเป็นโรค ไข้หวัด</h1>
+        <h3 align = 'center' class="ml-5">{{percent}}%</h3>
+    </div>
+    <div class="des-layout">
+        <div class="description" style="outline-color: #EEAE20;">
+            <h2>การปฏิบัติตนเบื้องต้น</h2>
+            <p align = 'left'> - กินยาพาราเซตามอลเพื่อลดไข้และอาการปวดศีรษะ</p>
+            <p align = 'left'> - เช็ดตัวด้วยผ้าชุบน้ำบิดหมาด โดยใช้น้ำอุณหภูมิห้องหรือน้ำอุ่น</p>
+            <p align = 'left'> - นอนพักผ่อน</p>
+            <p align = 'left'> - สวมใส่เสื้อผ้าให้ร่างกายอบอุ่น</p>
+            <p align = 'left'> - ดื่มน้ำให้มาก ๆ เพื่อช่วยลดไข้และทดแทนน้ำที่เสียไปเนื่องจากไข้สูง</p>
+        </div>
+        <div class="description ml-5" style="outline-color: greenyellow;">
+            <h2>ข้อเสนอแนะ</h2>
+            <p align = 'left'>- หากภายใน 4-7 วันอาการยังไม่ดีขึ้น โปรดไปพบแพทย์ผู้เชี่ยวชาญเพื่อวินิจฉัยเพิ่มเติมและหาแนวทางการรักษา</p>
+            <h2>ยาที่แนะนำ</h2>
+            <p align = 'left'>- พาราเซตามอล </p>
+            <p align = 'left'> - ผู้ใหญ่ : ครั้งละ 1-2 เม็ด (500มิลลิกรัม) </p>
+            <p align = 'left'> - เด็ก อายุน้อยกว่า 12 ปี : ให้ขนาด10-15มิลลิกรัม/กิโลกรัม/ครั้ง ซ้ำได้สูงสุด 4-6ชั่วโมง (ไม่เกิน 4 ครั้งต่อวัน) </p>
+            <p> <font color= "red"> * ก่อนการใช้งาน โปรดอ่านฉลากบนผลิตภัณฑ์อย่างละเอียดอีกครั้ง * </p> </font>
+        </div>
+    </div>
+    <div class="return-button">
+        <a href="{% url 'home-page' %}"><button type="button" class="btn btn-primary mr-1">กลับไปหน้าแรก</button></a>
+    </div>
+</div>
+{% endblock %}

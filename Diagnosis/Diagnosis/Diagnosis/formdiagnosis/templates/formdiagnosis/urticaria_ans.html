@@ -1,0 +1,31 @@
+{% extends 'formdiagnosis/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="top_display">
+        <h1 align = 'center'>คุณมีโอกาสที่จะเป็นโรค ลมพิษ</h1>
+        <h3 align = 'center' class="ml-5">{{percent}}%</h3>
+    </div>
+    <div class="des-layout">
+        <div class="description" style="outline-color: #EEAE20;">
+            <h2>การปฏิบัติตนเบื้องต้น</h2>
+            <p align = 'left'>- สังเกตว่าเกิดจากสิ่งกระตุ้นหรือสารก่อภูมิแพ้อะไร แล้วหลีกเลี่ยง</p>
+            <p align = 'left'>- หลีกเลี่ยงการเกา</p>
+            <p align = 'left'>- บริเวณที่เป็นลมพิษให้ระคบด้วยน้ำเย็นหรือน้ำแข็ง (ใช้ไม่ได้ในกรณีอาการแพ้มีสาเหตุเกิดจากความเย็น)</p>
+        </div>
+        <div class="description ml-5" style="outline-color: greenyellow;">
+            <h2>ข้อเสนอแนะ</h2>
+            <p align = 'left'>- หากมีอาการรุนแรง เช่น แน่นหน้าอก หายใจลำบาก หมดสติ หรือเป็นเรื้อรัง ใช้ยาแล้วไม่ดีขึ้นใน 1 สัปดาห์ เป็น ๆ หาย ๆ นานเกินสองเดือนควรไปพบแพทย์ผู้เชี่ยวชาญเพื่อวินิจฉัยเพิ่มเติมและหาแนวทางการรักษา</p>
+            <h2>ยาที่แนะนำ</h2>
+            <p align = 'left'>- ยาคลอร์เฟนิรามีน</p>
+            <p align = 'left'>ผู้ใหญ่ : ครั้งละ 1 เม็ด วันละ 2-4 ครั้ง</p>
+            <p align = 'left'>เด็ก : ให้วันละ 0.35 มิลลิกรัม/กิโลกรัม แบ่งให้วันละ 2-4 ครั้ง</p>
+            <p align = 'left'>- ยาคาลาไมน์ ใช้ทาบริเวณที่มีผื่นเพื่อบรรเทาอาการคัน วันละ 3-4 ครั้ง</p>
+            <p> <font color= "red"> * ก่อนการใช้งาน โปรดอ่านฉลากบนผลิตภัณฑ์อย่างละเอียดอีกครั้ง * </p> </font>
+        </div>
+    </div>
+    <div class="return-button">
+        <a href="{% url 'home-page' %}"><button type="button" class="btn btn-primary mr-1">กลับไปหน้าแรก</button></a>
+    </div>
+</div>
+{% endblock %}

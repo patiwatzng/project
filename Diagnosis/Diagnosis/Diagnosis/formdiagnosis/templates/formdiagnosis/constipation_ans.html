@@ -1,0 +1,35 @@
+{% extends 'formdiagnosis/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="top_display">
+        <h1 align = 'center'>โอกาสที่คุณจะ ท้องผูก</h1>
+        <h3 align = 'center' class="ml-5">{{percent}}%</h3>
+    </div>
+    <div class="des-layout">
+        <div class="description" style="outline-color: #EEAE20;">
+            <h2>การปฏิบัติตนเบื้องต้น</h2>
+            <p align = 'left'>- รับประทานอาหารที่มีกากใยสูงอย่างน้อย 18-30 กรัมต่อวัน</p>
+            <p align = 'left'>- ดื่มน้ำอย่างน้อย 2 ลิตร</p>
+            <p align = 'left'>- ปรับพฤติกรรมการขับถ่ายให้เป็นเวลาในแต่ละวัน</p>
+        </div>
+        <div class="description ml-5" style="outline-color: greenyellow;">
+            <h2>ข้อเสนอแนะ</h2>
+            <p align = 'left'>- ท้องผูกเรื้อรังเป็นเวลามากกว่า 10 วัน</p>
+            <p align = 'left'>- มีอาการคลื่นไส้อาเจียนหรือปวดท้องร่มวด้วย</p>
+            <p align = 'left'>- มีเลือดออกปนกับอุจจาระ</p>
+            <p align = 'left'>- เป็นริดสีดวงทวารหนักที่อยู่ในระยะอักเสบรุนแรง</p>
+            <p align = 'left'>- หากใช้ยาระบายนานกว่า 7 วันแล้วอาการยังไม่ดีขึ้นควรไปพบแพทย์ผู้เชี่ยวชาญเพื่อวินิจฉัยเพิ่มเติมและหาแนวทางการรักษา</p>
+            <h2>ยาที่แนะนำ</h2>
+            <p align = 'left'>- ยาระบายมะขามแขก</p>
+            <p align = 'left'>- ผู้ใหญ่ : รับผระทานครั้งละ 3-4 เม็ด</p>
+            <p align = 'left'>- ผเด็ก 6-12 ปี : รับประทานครั้งละ 1-2 เม็ด</p>
+            <p> <font color= "red"> * ห้ามใช้เมื่อมีอาการปวดท้องหรือคลื่นไส้อาเจียน ในหญิงมีครรภ์หรือให้นมบุตรควรปรึกษาแพทย์ก่อนใช้ยา และไม่ควรรับประทานเป็นประจำ * </p> </font>
+            <p> <font color= "red"> * ก่อนการใช้งาน โปรดอ่านฉลากบนผลิตภัณฑ์อย่างละเอียดอีกครั้ง * </p> </font>
+        </div>
+    </div>
+    <div class="return-button">
+        <a href="{% url 'home-page' %}"><button type="button" class="btn btn-primary mr-1">กลับไปหน้าแรก</button></a>
+    </div>
+</div>
+{% endblock %}

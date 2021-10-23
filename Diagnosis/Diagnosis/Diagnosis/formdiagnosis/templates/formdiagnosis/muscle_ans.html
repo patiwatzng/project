@@ -1,0 +1,30 @@
+{% extends 'formdiagnosis/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="top_display">
+        <h1 align = 'center'>คุณมีโอกาสที่จะเป็นโรค ปวดกล้ามเนื้อ</h1>
+        <h3 align = 'center' class="ml-5">{{percent}}%</h3>
+    </div>
+    <div class="des-layout">
+        <div class="description" style="outline-color: #EEAE20;">
+            <h2>การปฏิบัติตนเบื้องต้น</h2>
+            <p align = 'left'>- หาสาเหตุของอาการปวดและทำการแก้ไข</p>
+            <p align = 'left'>- ใช้ถุงน้ำแข็งวางบริเวณที่เป็นเมื่อเริ่มมีอาการ จากนั้นใช้ผ้าชุบน้ำอุ่น ๆ หรือประเป๋าน้ำร้อนประคบต่อ</p>
+        </div>
+        <div class="description ml-5" style="outline-color: greenyellow;">
+            <h2>ข้อเสนอแนะ</h2>
+            <p align = 'left'>- หากอาการปวดไม่ทุเลาลง ร่วมกับมีอาการชาหรือเสียการรับรู้ มีไข้สูง หนาวสั่น ปัสสาวะขุ่น ปัสสาวะแดง ควรรีบปรึกษาแพทย์ผู้เชี่ยวชาญทันทีเพื่อวินิจฉัยเพิ่มเติมและหาแนวทางการรักษา</p>
+            <h2>ยาที่แนะนำ</h2>
+            <p align = 'left'>- ยาหม่อง ทาบริเวณกล้ามเนื้อที่มีอาการปวด</p>
+            <p align = 'left'>- พาราเซตามอล</p>
+            <p align = 'left'>- ผู้ใหญ่ : ครั้งละ 1-2 เม็ด (500มิลลิกรัม)</p>
+            <p align = 'left'>- (เด็ก อายุน้อยกว่า 12 ปี : ให้ขนาด10-15มิลลิกรัม/กิโลกรัม/ครั้ง ซ้ำได้สูงสุด 4-6ชั่วโมง ไม่เกิน 4 ครั้งต่อวัน</p>
+            <p> <font color= "red"> * ก่อนการใช้งาน โปรดอ่านฉลากบนผลิตภัณฑ์อย่างละเอียดอีกครั้ง * </p> </font>
+        </div>
+    </div>
+    <div class="return-button">
+        <a href="{% url 'home-page' %}"><button type="button" class="btn btn-primary mr-1">กลับไปหน้าแรก</button></a>
+    </div>
+</div>
+{% endblock %}
